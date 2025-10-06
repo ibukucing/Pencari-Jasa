@@ -1,0 +1,167 @@
+:root {
+  --primary: #2D489D; 
+  --dark: #000000;
+  --light: #f9fafb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--dark);
+}
+
+/* NAVBAR */
+.navbar {
+  background: #fff;
+  border-bottom: 2px solid #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+.nav-icon {
+  font-size: 1.5rem;
+}
+
+/* HERO */
+.hero {
+  background: url('bgwebbisabantu.png') no-repeat center/cover;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  color: var(--dark);
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: var(--primary);
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/* NEXT & LIHAT DETAIL LINK (SAMAIN STYLE) */
+.next-link,
+.card-text a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease; /* smooth hover */
+}
+
+.next-link:hover,
+.card-text a:hover {
+  color: var(--primary);
+}
+
+/* CARI JASA SECTION */
+.cari-jasa {
+  background: #d1d5da;   /* abu-abu muda */
+  padding: 4rem 2rem;
+}
+
+.cari-jasa .intro {
+  text-align: left;        /* rata kiri */
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+  max-width: 500px;        /* biar teks nggak kepanjangan */
+}
+
+.cari-jasa h2 {
+  text-align: right;       /* rata kanan */
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 220px;            /* kecil */
+  margin: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 3/4;       /* selalu 3:4 */
+  object-fit: cover;
+  border-radius: 8px;      /* opsional */
+}
+
+.card-text {
+  padding: 1rem;
+  text-align: center;      /* biar rapi tengah */
+}
+
+.card-text h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
